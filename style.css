@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+body {
+   
+    justify-content: center;
+    min-height: 90vh;
+    align-items: center;
+    
+  
+  }
+  .carousel-item .info a ,h1{
+	  text-decoration: none;
+  }
+/* ------------------end---navbar------------------- */
+
+.navbar{
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	padding:25px 0;
+}
+.navbar .logo{
+	font-size: 3.5em;
+	text-shadow: 1px 2px 2px rgb(41, 40, 40);
+	font-weight: 750;
+	letter-spacing: 2px;
+}
+.navbar ul.nav{
+	margin-right: 15%;
+}
+.navbar ul.nav li.active,
+.navbar ul.nav li:hover{
+	background:rgba(255, 255, 255, 0.5);
+	color: #000;
+
+}
+.navbar ul.nav li a{
+	color: #fff;
+	font-size: 1em;
+	font-weight: 500;
+	text-shadow: 1px 1px 2px rgb(41, 40, 40);
+}
+.navbar ul.nav li.active a,
+.navbar ul.nav li:hover a{
+	color: #000;
+}
+
+/* ------------------end---navbar------------------- */
+
+
+
+/* ---------------------carousel------------------- */
+/*slider*/
+#carouselExampleIndicators{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+}
+#carouselExampleIndicators .carousel-inner{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background: #000;
+}
+#carouselExampleIndicators .carousel-inner:before{
+	position: absolute;
+	content: '';
+	background: rgba(0, 0, 0, 0.45);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 0.3;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item{
+	position: relative;
+	height: 100%;
+	width:100%;
+	background: url(img/pc1.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(2){
+	background: url(img/spa.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item:nth-child(3){
+	background: url(img/suitcase.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#carouselExampleIndicators .carousel-inner .carousel-item .info{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	height: auto;
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+}
+#carouselExampleIndicators .carousel-inner .carousel-item h1{
+	height: auto;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 5.5em;
+	font-weight: 750;
+	text-shadow: 1px 2px 2px rgb(41, 40, 40);
+}
+#carouselExampleIndicators .carousel-inner .carousel-item p{
+	height: auto;
+	color: rgb(253, 246, 246);
+	width: 100%;
+	z-index: 1;
+	text-align: center;
+	font-size: 2.2em;
+	font-weight: 500;
+	text-shadow: 1px 2px 2px rgb(41, 40, 40);
+}
+/* --------------end-------carousel------------------- */
+
+/* ----------------all--------------------- */
+
+#center{
+	margin-top: 30vh;
+}
+#down{
+	margin-top: 10vh;
+}
+/* ------------end----all--------------------- */
+
+/* ---------------------komfort------------------- */
+#komfort{
+	background-image: url(img/lux4.jpg); 
+	background-attachment: fixed;
+	height: 25vh;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	
+} 
+/* carousel-komfort */
+.carousel-item {
+	width: 600px;
+	}
+/* carousel-komfort */
+
+/* ---------------end---komfort------------------- */
+#design{
+	background-image: url(img/lux4.jpg); 
+	background-attachment: fixed;
+    height: 25vh;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	
+}
+
+
+/* ------------------about------------------- */
+#about{
+	background-image: url(img/lux4.jpg); 
+	background-attachment: fixed;
+    height: 25vh;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+	
+}
+
+/* ------------------end---about------------------- */
+
+/* ------------------contact------------------- */
+#contact{
+	background-image: url(img/lux4.jpg);
+	background-attachment: fixed; 
+	height: 25vh;
+	position: fixed ;
+	top: 0;
+	z-index: 99999;
+
+}
+/* ------------------end---contact------------------- */
+/* -------------------gallery--navbar------------------------------ */
+#gallery{
+	
+	background-image: url(img/lux4.jpg); 
+	background-attachment: fixed;
+	height: 25vh;
+    position: fixed;
+	top: 0;
+}
+/* ---------------end----gallery-------navbar------------------------- */
+
+
+/* -------------------gallery--navbar------------------------------ */
+#rooms{
+	
+	background-image: url(img/lux4.jpg); 
+	background-attachment: fixed;
+	height: 25vh;
+    position: fixed;
+	top: 0;
+	z-index: 99999;
+}
+/* ---------------end----gallery-------navbar------------------------- */
+
+
+
+/* // ------------------gallery-------------------------- */
+ .images1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin: 0 1em;
+	padding-top: 2%;
+   
+  }
+  .images1 img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    border-radius: 15px;
+  }
+ 
+  .modal1 {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    z-index: 1;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .modal-Content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal-Img {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+  }
+  .modal-Txt {
+    margin-top: 1em;
+  }
+  .close {
+    position: absolute;
+    top: 1em;
+    right: 1.5em;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .modal1.appear {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .modal1.appear .modal-Img,
+  .modal1.appear .modal-Txt {
+    animation: zoom 0.3s linear;
+  }
+  @keyframes zoom {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+ /* ------------------end gallery-------------------------- */
+  /* ---------------------footer----------------------------- */
+ .footer-dark {
+
+	padding:50px 0;
+	color:#f0f9ff;
+	background-color:#282d32;
+  }
+  
+  .footer-dark h3 {
+	margin-top:0;
+	margin-bottom:12px;
+	font-weight:bold;
+	font-size:16px;
+  }
+  
+  .footer-dark ul {
+	padding:0;
+	list-style:none;
+	line-height:1.6;
+	font-size:14px;
+	margin-bottom:0;
+  }
+  
+  .footer-dark ul a {
+	color:inherit;
+	text-decoration:none;
+	opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+	opacity:0.8;
+  }
+  
+  @media (max-width:767px) {
+	.footer-dark .item:not(.social) {
+	  text-align:center;
+	  padding-bottom:20px;
+	}
+  }
+  
+  .footer-dark .item.text {
+	margin-bottom:36px;
+  }
+  
+  @media (max-width:767px) {
+	.footer-dark .item.text {
+	  margin-bottom:0;
+	}
+  }
+  
+  .footer-dark .item.text p {
+	opacity:0.6;
+	margin-bottom:0;
+  }
+  
+  .footer-dark .item.social {
+	text-align:center;
+  }
+  
+  @media (max-width:991px) {
+	.footer-dark .item.social {
+	  text-align:center;
+	  margin-top:20px;
+	}
+  }
+
+
+  
+  .footer-dark .item.social > a {
+	font-size:20px;
+	width:36px;
+	height:36px;
+	line-height:36px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+	margin:0 8px;
+	color:#fff;
+	opacity:0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+	opacity:0.9;
+  }
+  
+  .footer-dark .copyright {
+	text-align:center;
+	padding-top:24px;
+	opacity:0.3;
+	font-size:13px;
+	margin-bottom:0;
+  }
+
+  
+/* ---------------end------footer----------------------------- */
+
+
+
